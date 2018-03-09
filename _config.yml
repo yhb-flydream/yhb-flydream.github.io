@@ -1,27 +1,27 @@
 # ---------------- #
 #   Main Configs   #
 # ---------------- #
-baseurl:
-url: http://mazhuang.org
+baseurl: https://yhb-flydream.github.io/
+url: https://yhb-flydream.github.io/  # http://mazhuang.org
 date_format: "ordinal"
-title: Hello Man
-subtitle: xiedajian's github
-description: Hello Man
-keywords: xiedajian, ionic, angular, typescript
+title: yhb-flydream
+subtitle: 学习是一条令人时而欣喜若狂、时而郁郁寡欢的旅途。I Want Something Just Like This.
+description: yhb-flydream, javascript, html, css, SEO, mip
+keywords: yhb-flydream, javascript, html, css, SEO, mip
 favicon: /favicon.ico
-timezone: Asia/Shenzhen
+timezone: China/Zhengzhou
 encoding: "utf-8"
 side_bar_repo_limit: 5
 
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: xiedajian
-organization: Mine, Inc.
-organization_url: http://www.wangyudong.cf
-github_username: xiedajian
+author: yhb-flydream
+organization: E-commerce, Relational map, AI.
+organization_url: https://www.linkeddb.com/
+github_username: yhb-flydream
 location: Zhengzhou, China
-email: 172265972@qq.com
+email: yhbflydream@gmail.com
 
 # ---------------- #
 #    Navigation    #
@@ -78,7 +78,7 @@ collections:
         output: true
         permalink: /wiki/:path/
 
-repository: wenfengtou/mzlogin.github.io
+repository: yhb-flydream.github.io/  # wenfengtou/mzlogin.github.io
 
 # ---------------- #
 #      Comments    #

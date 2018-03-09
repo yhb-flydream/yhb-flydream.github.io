@@ -1,8 +1,8 @@
 ---
 layout: page
 title: About
-description: 谢大见的github之家
-keywords: xiedajian, 谢大见
+description: yhb-flydream
+keywords: yhb-flydream
 comments: true
 menu: 关于
 permalink: /about/
