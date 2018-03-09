@@ -1,0 +1,32 @@
+---
+layout: post
+title: cordova由来
+categories: ionic
+description: 混编cordova的历史由来
+keywords: js, ionic, cordova, hybird
+---
+
+来源于网络
+
+
+![image.png](http://upload-images.jianshu.io/upload_images/4263048-eb02064f4380855d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+很多开发者有很多误解，什么叫Cordova,什么叫PhoneGap，他们之间有哪些区别。谈到这个问题不得不说cordova的发展历史。那是在2008年8月，PhoneGap在旧金山举办的iPhoneDevCamp上崭露头角，起名为PhoneGap是创始人的想法：“为跨越Web技术和iPhone之间的鸿沟牵线搭桥”。当时PhoneGap隶属于Nitobe公司,而从Nitobe的博客上你可以看到最初创作者对他的评价“他有点像为iphone而开发的AIR”(Air桌面技术使得web开发人员使用HTML,CSS,Javascript开发桌面应用程序)。2009年2月25日，PhoneGap0.6发布，是PhoneGap历史上第一个稳定版本，分别支持IOS,Android,BlackBerry平台。在那个时候，PhoneGap已经决定了它所担当的历史任务，直到现在。慢慢的PhoneGap开始支持更多平台。而在此时，被乔布斯宣布死亡的Flash持有者adobe开始意识到，这个项目似乎是自己放弃Flash而寻找替代的一个产品。于是2011年10月4日，Adobe宣布收购Nitobe,在收购之后Adobe其实并没有做太多的贡献，只是把原来的PhoneGap和PhoneGap Build 提供服务并做好宣传工作。
+      后来Adobe将Phonegap捐献给Apache基金会，作为开源项目。但项目初期依然只是Adobe公司内部员工来维护该项目，而由于Adobe公司依然保留着PhoneGap的商标所有权，导致在那以后的一段日子里，PhoneGap一直被认为是Adobe公司的私有财产。直到PhoneGap1.4发布时，Cordova这个名字才真正被Apache公布（期间有过一次更名叫Apache Callback）。看到这段历史你可能会想到另一端历史Javascript和ECMAscript，你会发现Cordova之于PhoneGap和ECMAscript之于Javascript是多么的相似。
+###Cordova和PhoneGap到底都是指什么？
+从概念上将 Cordova是Adobe捐献给Apache的项目，是一个开源的、核心的跨平台模块。而PhoneGap是Adobe的一项商业产品，有自己的商业版权，有自己平台服务，有自己的收费项目。
+Cordova和PhoneGap的关系就类似于WebKit与Chrome的关系,类似于ECMAscript和Javascript的关系。
+PhoneGap作为商用组件，还包括一些PhoneGap Build和Adobe Shadow等商业服务。
+然而Cordova和PhoneGap的核心代码是一样的。
+
+###Adobe公司为什么要捐献这个项目？
+其实在收购Nitobe公司的时候就已经做定主意将PhoneGap开源，具体原因也许只能是Adobe的高层才能解释，我理解是当时Adobe Flash的挫败使得Adobe必须有一个时代的替代品，而PhoneGap就是这么一个产品，所以Adobe不准备在核心代码上做文章，而是通过收费的PhoneGap build和Adobe Shadow来占领市场，将PhoneGap开源能够保证框架的大面积推广，说到底他们不想浪费时间来维护更新这个项目
+###Cordova现状
+最新已经有version6.x,核心代码稳定，更新快速，平台支持较多（我记得PhoneGap最猖狂的时候支持11个平台，现在是8个），平台多不一定是好事，因为核心要兼容多平台，那通用接口就会少，就个人而言最理想的是支持5个平台左右为宜。
+同类型竞品多。不过像Cordova相同的角色到并没有，作为hybrid开发中间件，其实有很多竞品。你可以看到和Phonegap几乎同时出道的老大哥Titanium，其实更倾向于将javascript打造成编译语言的角色，而同Titanium类型相近的有国内的Dcloud等。而在最初国内有一款叫Appcan的框架在前些日子也宣布全面开源了，但是你知道的国内的开源都是耍着流氓立牌坊的，免费并不代表开源，所以Cordova充当的角色在一段时期内还是无人能替代的。
+瓶颈在于性能。由于Cordova的实现借助浏览器核心webkit，而javascript的低性能导致由Cordova开发出的应用性能一直是其他开发者大喷特喷的一点，不过新的技术革新，这个问题在逐渐被改观。
+开发工具已经完善。比起我用PhoneGap的年代，现在搭配Cordova开发的工具已经非常丰富，对于开发者入手也相对容易多了。
+开发应用已经被大家接受。记得有一段时间appstore审核只要是PhoneGap开发的应用就不让上架，现在苹果已经不敢这么做了。
+
+
+参考 * [PhoneGap Beliefs, Goals, and Philosophy](http://phonegap.com/)
