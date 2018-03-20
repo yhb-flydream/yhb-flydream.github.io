@@ -25,5 +25,3 @@ permalink: /about/
 {% endfor %}
 </div>
 {% endfor %}
-
-> {% for category in site.data.skills %}{% for keyword in category.keywords %}{{ keyword }} {% endfor %}{% endfor %}
