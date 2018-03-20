@@ -43,9 +43,9 @@ navs:
     href: /about/
     label: 关于
 
-  -
-    href: /me/
-    label: 简历
+#  -
+#    href: /me/
+#    label: 简历
 
 # ---------------- #
 #       RSS        #
