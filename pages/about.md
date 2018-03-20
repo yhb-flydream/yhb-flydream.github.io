@@ -1,8 +1,8 @@
 ---
 layout: page
 title: 我的简介
-description: {% for category in site.data.skills %}{% for keyword in category.keywords %}{{ keyword }} {% endfor %}{% endfor %}
-keywords: {% for category in site.data.skills %}{% for keyword in category.keywords %}{{ keyword }} {% endfor %}{% endfor %}
+description: 我的简介
+keywords: 我的简介
 comments: true
 menu: 关于
 permalink: /about/
@@ -25,3 +25,5 @@ permalink: /about/
 {% endfor %}
 </div>
 {% endfor %}
+
+> {% for category in site.data.skills %}{% for keyword in category.keywords %}{{ keyword }} {% endfor %}{% endfor %}
