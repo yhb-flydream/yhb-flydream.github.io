@@ -1,10 +1,14 @@
 - name: Software Engineer Keywords
   keywords:
-      - Php
+      - HTML
+      - CSS
       - Javascript
-      - Typescript
-      - Angular
+      - SEO
+      - VUE
 
 - name: Mobile Developer Keywords
   keywords:
-      - ionic
+      - MIP
+      - SUI
+      - MUI
+      - WEUI
