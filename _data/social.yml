@@ -2,9 +2,33 @@
   name: yhb-flydream
   url: https://github.com/yhb-flydream
 
+- sitename: Facebook
+  name: yhb-flydream
+  url:
+
+- sitename: Twitter
+  name: yaohebin
+  url: https://twitter.com/yaohebin
+
+- sitename: Google+
+  name: hebin Yao
+  url: https://plus.google.com/113600784559520299454
+
+- sitename: Linkedin
+  name: hebin Yao
+  url: https://www.linkedin.com/
+
+- sitename: Tumblr
+  name: 迷失方向的風
+  url: https://yaohebin.tumblr.com/
+
 - sitename: 简书
   name: 迷失方向的風
   url: https://www.jianshu.com/users/59d4def8cb1b/timeline
+
+- sitename: CSDN
+  name: 迷失方向的風
+  url: http://blog.csdn.net/qq_41351347
 
 - sitename: 邮箱
   name: yhbflydream@gmail.com

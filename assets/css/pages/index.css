@@ -16,6 +16,7 @@
 .collection-head .collection-header {
   position: relative;
   font-size: 50px;
+  text-align: justify;
 }
 
 .collection-head .collection-header .white{
@@ -33,7 +34,7 @@
   content: attr(data-word);
   position: absolute;
   top: 0;
-  left: 0;
+  left: -1px;
   height: 0;
   color: rgba(0,0,0,.9);
   overflow: hidden;
@@ -48,10 +49,10 @@
   top: 0;
   left: -3px;
   height: 134px;
-  color: rgba(0,0,0,.8);
+  /*color: rgba(0,0,0,.8);*/
   overflow: hidden;
   z-index: 3;
-  background: rgba(255,255,255,.9);
+  /*background: #302F2F;*/
   animation: redHeight 1.5s ease-out infinite;
   -webkit-filter: contrast(200%);
 }
@@ -122,14 +123,16 @@
 
 .container .repo-list-item .repo-list-name {
   position: relative;
+  height: 1.6rem;
 }
 
 .container .repo-list-item .repo-list-name a {
+  height: 1.6rem;
   position: absolute;
   background: linear-gradient(90deg,#4183c4 50%, transparent 0) repeat-x;
   background-size: .3em 2px;
   background-position: -5em 1.15em;
-  text-shadow: 0.1em 0 #4183c4, -0.1em 0 #4183c4;
+  /*text-shadow: 0.1em 0 #4183c4, -0.1em 0 #4183c4;*/
   transition: 1s;
 }
 
