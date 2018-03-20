@@ -5,7 +5,7 @@ baseurl: https://yhb-flydream.github.io/
 url: https://yhb-flydream.github.io/  # http://mazhuang.org
 date_format: "ordinal"
 title: yhb-flydream
-subtitle: 学习是一条令人时而欣喜若狂、时而郁郁寡欢的旅途。I Want Something Just Like This.
+subtitle: 学习是一条令人时而欣喜若狂、时而郁郁寡欢的旅途.I Want Something Just Like This.
 description: yhb-flydream, javascript, html, css, SEO, mip
 keywords: yhb-flydream, javascript, html, css, SEO, mip
 favicon: /favicon.ico

@@ -1,30 +1,141 @@
 .home .banner,
 .home .site-header {
-    background: #159957;
-    color: #fff
+  /*background: #159957;*/
+  color: #fff;
+  background: url(/assets/images/octicons-bg.png) center #302F2F;
+  box-shadow: inset 0 10px 20px rgba(0,0,0,.1);
 }
 
 .home .banner .collection-head {
-    color: #fff;
-    background: 0 0;
-    box-shadow: none;
-    -webkit-box-shadow: none
+  color: #fff;
+  background: 0 0;
+  box-shadow: none;
+  -webkit-box-shadow: none
+}
+
+.collection-head .collection-header {
+  position: relative;
+  font-size: 50px;
+}
+
+.collection-head .collection-header .white{
+  display: inline-block;
+  position:absolute;
+  left:0;
+  top:15px;
+  width:100%;
+  height:3px;
+  background:#fff;
+  z-index:4;
+  animation:whiteMove 3s ease-out infinite;
+}
+.collection-head .collection-header:before{
+  content: attr(data-word);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  color: rgba(0,0,0,.9);
+  overflow: hidden;
+  z-index: 2;
+  animation: redShadow 1s ease-in infinite;
+  -webkit-filter: contrast(200%);
+  text-shadow: 0.1px 0 0 red;
+}
+.collection-head .collection-header:after{
+  content: attr(data-word);
+  position: absolute;
+  top: 0;
+  left: -3px;
+  height: 134px;
+  color: rgba(0,0,0,.8);
+  overflow: hidden;
+  z-index: 3;
+  background: rgba(255,255,255,.9);
+  animation: redHeight 1.5s ease-out infinite;
+  -webkit-filter: contrast(200%);
+}
+@keyframes redShadow{
+  20%{
+    height: 120px;
+  }
+  60%{
+    height: 20px;
+  }
+  100%{
+    height: 134px;
+  }
+}
+@keyframes redHeight{
+  20%{
+    height: 134px;
+  }
+  35%{
+    height: 40px;
+  }
+  50%{
+    height: 130px;
+  }
+  60%{
+    height: 65px;
+  }
+  70%{
+    height: 89px;
+  }
+  80%{
+    height: 65px;
+  }
+  100%{
+    height:0;
+  }
+}
+@keyframes whiteMove{
+  8%{
+    top: 105px;
+  }
+  10%{
+    top: 25px;
+  }
+  12%{
+    top: 134px;
+  }
+  99%{
+    top: 95px;
+  }
 }
 
 .home .site-header {
-    border-bottom: none
+  border-bottom: none
 }
 
 .home .site-header h1 a {
-    color: #fff
+  color: #fff
 }
 
 .home .site-header .site-header-nav-item {
-    color: rgba(255, 255, 255, .5)
+  color: rgba(255, 255, 255, .5)
 }
 
 .home .site-header .site-header-nav-item:hover {
-    color: #fff
+  color: #fff
+}
+
+.container .repo-list-item .repo-list-name {
+  position: relative;
+}
+
+.container .repo-list-item .repo-list-name a {
+  position: absolute;
+  background: linear-gradient(90deg,#4183c4 50%, transparent 0) repeat-x;
+  background-size: .3em 2px;
+  background-position: -5em 1.15em;
+  text-shadow: 0.1em 0 #4183c4, -0.1em 0 #4183c4;
+  transition: 1s;
+}
+
+.container .repo-list-item .repo-list-name a:hover {
+  text-decoration: none;
+  background-position: 0 1.15em;
 }
 
 
