@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Wiki
+title: 收藏
 description: 学习是一条令人时而欣喜若狂、时而郁郁寡欢的旅途。
 keywords: 维基, Wiki
 comments: false
-menu: 维基
+menu: 收藏
 permalink: /wiki/
 ---
 

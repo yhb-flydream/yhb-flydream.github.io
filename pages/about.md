@@ -1,22 +1,21 @@
 ---
 layout: page
-title: About
-description: yhb-flydream
-keywords: yhb-flydream
+title: 我的简介
+description: {% for category in site.data.skills %}{% for keyword in category.keywords %}{{ keyword }} {% endfor %}{% endfor %}
+keywords: {% for category in site.data.skills %}{% for keyword in category.keywords %}{{ keyword }} {% endfor %}{% endfor %}
 comments: true
 menu: 关于
 permalink: /about/
 ---
 
-on the way
 
-## 联系
+## 找到我
 
 {% for website in site.data.social %}
 * {{ website.sitename }}：[@{{ website.name }}]({{ website.url }})
 {% endfor %}
 
-## Skill Keywords
+## 我的特长
 
 {% for category in site.data.skills %}
 ### {{ category.name }}

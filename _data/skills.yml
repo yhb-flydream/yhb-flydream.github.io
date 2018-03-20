@@ -1,13 +1,10 @@
-- name: Software Engineer Keywords
+- name: 我擅长的技能（PC、Mobile）
   keywords:
       - HTML
       - CSS
       - Javascript
       - SEO
       - VUE
-
-- name: Mobile Developer Keywords
-  keywords:
       - MIP
       - SUI
       - MUI
