@@ -19,92 +19,6 @@
   text-align: justify;
 }
 
-.collection-head .collection-header .white{
-  display: inline-block;
-  position:absolute;
-  left:0;
-  top:15px;
-  width:100%;
-  height:3px;
-  background:#fff;
-  z-index:4;
-  animation:whiteMove 3s ease-out infinite;
-}
-.collection-head .collection-header:before{
-  content: attr(data-word);
-  position: absolute;
-  top: 0;
-  left: -1px;
-  height: 0;
-  color: rgba(0,0,0,.9);
-  overflow: hidden;
-  z-index: 2;
-  animation: redShadow 1s ease-in infinite;
-  -webkit-filter: contrast(200%);
-  text-shadow: 0.1px 0 0 red;
-}
-.collection-head .collection-header:after{
-  content: attr(data-word);
-  position: absolute;
-  top: 0;
-  left: -3px;
-  height: 134px;
-  /*color: rgba(0,0,0,.8);*/
-  overflow: hidden;
-  z-index: 3;
-  /*background: #302F2F;*/
-  animation: redHeight 1.5s ease-out infinite;
-  -webkit-filter: contrast(200%);
-}
-@keyframes redShadow{
-  20%{
-    height: 120px;
-  }
-  60%{
-    height: 20px;
-  }
-  100%{
-    height: 134px;
-  }
-}
-@keyframes redHeight{
-  20%{
-    height: 134px;
-  }
-  35%{
-    height: 40px;
-  }
-  50%{
-    height: 130px;
-  }
-  60%{
-    height: 65px;
-  }
-  70%{
-    height: 89px;
-  }
-  80%{
-    height: 65px;
-  }
-  100%{
-    height:0;
-  }
-}
-@keyframes whiteMove{
-  8%{
-    top: 105px;
-  }
-  10%{
-    top: 25px;
-  }
-  12%{
-    top: 134px;
-  }
-  99%{
-    top: 95px;
-  }
-}
-
 .home .site-header {
   border-bottom: none
 }
@@ -121,26 +35,113 @@
   color: #fff
 }
 
-.container .repo-list-item .repo-list-name {
-  position: relative;
-  height: 1.6rem;
-}
+@media (min-width:50.1em) {
+  .collection-head .collection-header .white{
+    display: inline-block;
+    position:absolute;
+    left:0;
+    top:15px;
+    width:100%;
+    height:3px;
+    background:#fff;
+    z-index:4;
+    animation:whiteMove 3s ease-out infinite;
+  }
+  .collection-head .collection-header:before{
+    content: attr(data-word);
+    position: absolute;
+    top: 0;
+    left: -1px;
+    height: 0;
+    color: rgba(0,0,0,.9);
+    overflow: hidden;
+    z-index: 2;
+    animation: redShadow 1s ease-in infinite;
+    -webkit-filter: contrast(200%);
+    text-shadow: 0.1px 0 0 red;
+  }
+  .collection-head .collection-header:after{
+    content: attr(data-word);
+    position: absolute;
+    top: 0;
+    left: -3px;
+    height: 134px;
+    /*color: rgba(0,0,0,.8);*/
+    overflow: hidden;
+    z-index: 3;
+    /*background: #302F2F;*/
+    animation: redHeight 1.5s ease-out infinite;
+    -webkit-filter: contrast(200%);
+  }
+  @keyframes redShadow{
+    20%{
+      height: 120px;
+    }
+    60%{
+      height: 20px;
+    }
+    100%{
+      height: 134px;
+    }
+  }
+  @keyframes redHeight{
+    20%{
+      height: 134px;
+    }
+    35%{
+      height: 40px;
+    }
+    50%{
+      height: 130px;
+    }
+    60%{
+      height: 65px;
+    }
+    70%{
+      height: 89px;
+    }
+    80%{
+      height: 65px;
+    }
+    100%{
+      height:0;
+    }
+  }
+  @keyframes whiteMove{
+    8%{
+      top: 105px;
+    }
+    10%{
+      top: 25px;
+    }
+    12%{
+      top: 134px;
+    }
+    99%{
+      top: 95px;
+    }
+  }
 
-.container .repo-list-item .repo-list-name a {
-  height: 1.6rem;
-  position: absolute;
-  background: linear-gradient(90deg,#4183c4 50%, transparent 0) repeat-x;
-  background-size: .3em 2px;
-  background-position: -5em 1.15em;
-  /*text-shadow: 0.1em 0 #4183c4, -0.1em 0 #4183c4;*/
-  transition: 1s;
-}
+  .container .repo-list-item .repo-list-name {
+    position: relative;
+    height: 1.6rem;
+  }
 
-.container .repo-list-item .repo-list-name a:hover {
-  text-decoration: none;
-  background-position: 0 1.15em;
-}
+  .container .repo-list-item .repo-list-name a {
+    height: 1.6rem;
+    position: absolute;
+    background: linear-gradient(90deg,#4183c4 50%, transparent 0) repeat-x;
+    background-size: .3em 2px;
+    background-position: -5em 1.15em;
+    /*text-shadow: 0.1em 0 #4183c4, -0.1em 0 #4183c4;*/
+    transition: 1s;
+  }
 
+  .container .repo-list-item .repo-list-name a:hover {
+    text-decoration: none;
+    background-position: 0 1.15em;
+  }
+}
 
 @media (max-width:50em) {
   .home .collapsed .icon-bar {
@@ -149,5 +150,6 @@
 
   .home .collection-head .collection-header {
     font-size: 1.25em;
+    line-height: 1.5;
   }
 }
