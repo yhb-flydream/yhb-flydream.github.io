@@ -123,3 +123,7 @@
     background-color: #777;
     border-radius: 10px;
 }
+
+.collection-head {
+    background: url(/assets/images/octicons-bg.png) center #302F2F !important;
+}
