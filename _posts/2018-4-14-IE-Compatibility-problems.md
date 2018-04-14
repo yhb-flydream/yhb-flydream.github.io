@@ -7,14 +7,14 @@ keywords: IE兼容问题集合
 ---
 
 
-# IE兼容问题集合
-[TOC]
 ### 给一个元素绑定多个事件后，IE6、7、8，执行顺序为倒序执行
+
 - 解决：
 	- 把将要给这个元素绑定的事件放到一个数组里面，再给这个元素绑定一个函数，这个函数执行时依次遍历数组，调用数组里面已经存储的每个事件
 	
 
 ### 透明度(opacity)
+
 ```javascript
 /**
  * 设置透明度（兼容旧版本：要设置2次）
@@ -27,6 +27,7 @@ box.style.filter = "alpha(opacity = 50)";
 
 
 ### 获取标签的内容(innerText)
+
 ```javascript
 /**
  * 获取标签的内容（兼容所有浏览器） 不兼容IE678
@@ -46,6 +47,7 @@ function getInnerText(element) {
 ```
 
 ### 设置标签内容(innerText)
+
 ```javascript
 /**
  * 设置标签内容的方法（兼容性问题） 不兼容IE678
@@ -63,6 +65,7 @@ function setInnerText(element, value) {
 ```
 
 ### 获取指定元素的子元素(childNodes)
+
 ```javascript
 /**
  * 获取指定元素的子元素
@@ -86,6 +89,7 @@ function getChildElements(element) {
 ```
 
 ### 获取指定元素的下一个兄弟元素(nextElementSibling)
+
 ```javascript
 /**
  * 获取指定元素的下一个兄弟元素(nextElementSibling)兼容性问题  不兼容IE678
@@ -111,6 +115,7 @@ function getNextElement(element) {
 ```
 
 ### 获取指定元素的上一个兄弟元素(previousElementSibling)
+
 ```javascript
 /**
  * 获取指定元素的上一个兄弟元素(previousElementSibling)
@@ -135,6 +140,7 @@ function getPreviousElement(element) {
 ```
 
 ### 获得最后一个元素(lastElementChild)
+
 ```javascript
 /**
  * 获得最后一个元素
@@ -155,6 +161,7 @@ function getLastElement(element) {
 ```
 
 ### 获得第一个元素(firstElementChild)
+
 ```javascript
 /**
  * 获得第一个元素
@@ -175,6 +182,7 @@ function getFirstElement(element) {
 ```
 
 ### 封装class类
+
 ```javascript
 /**
      *封装class类
@@ -202,6 +210,7 @@ function getFirstElement(element) {
 ```
 
 ### 得到当前时间
+
 ```javascript
 /**
 * 得到当前时间
@@ -251,6 +260,7 @@ function getNowtime() {
 
 
 ### scroll
+
 ```
 function scroll() {
     return {
@@ -262,6 +272,7 @@ function scroll() {
 
 
 ### 获取pageX、pageY，兼容IE678
+
 ```
 //获取pageX，兼容IE678
 function getPageX(event) {
@@ -279,6 +290,7 @@ function getPageY(event) {
 ```
 
 ### 注册/移除事件`(addEventListener/removeEventListener)`
+
 ```
 //注册事件的兼容性封装
 function addEventListener(element, type, fn) {
@@ -308,6 +320,7 @@ function removeEventListener(element, type, fn) {
 ```
 
 ### 阻止事件冒泡（stopPropagation/cancelBubble）
+
 ```
 //阻止事件冒泡
 function stopPropagation(event) {
